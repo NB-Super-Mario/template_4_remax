@@ -1,0 +1,34 @@
+{
+  "name": "template_4_remax",
+  "private": true,
+  "version": "1.0.0",
+  "description": "template_4_remax",
+  "main": "index.js",
+  "keywords": [],
+  "author": "lyboy2012 <ly.boy2012@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=dev remax build -t wechat -w",
+    "test": "NODE_ENV=test remax build -t wechat",
+    "pre": "NODE_ENV=pre remax build -t wechat",
+    "build": "NODE_ENV=production remax build -t wechat",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "dependencies": {
+    "@vant/weapp": "^1.0.7",
+    "react": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "remax": "^1.15.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.16",
+    "@types/react-redux": "^7.1.7",
+    "chokidar": "^3.3.0",
+    "remax-cli": "^1.15.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.8.3"
+  }
+}
